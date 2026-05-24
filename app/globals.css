@@ -1,0 +1,150 @@
+/* ─────────────────────────────────────────
+   GRACIOUS HAIR EXTENSION – Global CSS
+   Palette: Purple · Gold · White
+───────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
+
+/* ── TOKENS ── */
+:root {
+  --purple:        #3E0F6B;
+  --purple-light:  #5C1F96;
+  --purple-soft:   #7B3DBF;
+  --purple-pale:   #EDE0FF;
+  --purple-dark:   #250845;
+  --gold:          #C9A84C;
+  --gold-light:    #E8C96A;
+  --gold-pale:     #FAF0CC;
+  --gold-dark:     #8F6B20;
+  --white:         #FFFDF7;
+  --cream:         #FAF5EA;
+  --cream-deep:    #F0E6CC;
+  --text-dark:     #180534;
+  --text-mid:      #5A3A80;
+  --text-muted:    #9A80B4;
+  --border:        rgba(201,168,76,0.22);
+
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+
+  --shadow-gold: 0 8px 30px rgba(201,168,76,0.22);
+  --shadow-purple: 0 8px 30px rgba(62,15,107,0.18);
+  --shadow-lift: 0 16px 48px rgba(62,15,107,0.14);
+
+  --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-accent:  'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Jost', sans-serif;
+}
+
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font-family: var(--font-body); cursor: pointer; border: none; background: none; }
+ul { list-style: none; }
+
+/* ── UTILITY ── */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.section-pad { padding: 100px 0; }
+
+/* ── SECTION HEADER ── */
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.section-eyebrow {
+  font-size: 0.6rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--purple-dark);
+  line-height: 1.15;
+}
+.section-line {
+  width: 56px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+/* ── BUTTONS ── */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  color: var(--purple-dark);
+  padding: 13px 30px;
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--gold-light);
+  padding: 12px 30px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(201,168,76,0.5);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.btn-outline:hover {
+  background: rgba(201,168,76,0.08);
+  border-color: var(--gold-light);
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .section-pad { padding: 70px 0; }
+}

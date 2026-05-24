@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" role="img">
+  <title>Gracious Hair Extension Logo</title>
+  <desc>Elegant feminine silhouette with afro crown and gold typography for Gracious Hair Extension</desc>
+
+  <defs>
+    <linearGradient id="gGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8C96A"/>
+      <stop offset="100%" stop-color="#C9A84C"/>
+    </linearGradient>
+    <linearGradient id="gHair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8C96A"/>
+      <stop offset="70%" stop-color="#9A7530"/>
+      <stop offset="100%" stop-color="#5A3A00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── Silhouette icon (left side, 52x64 bounding box) ── -->
+
+  <!-- Voluminous afro hair -->
+  <ellipse cx="26" cy="26" rx="15" ry="17" fill="url(#gHair)" opacity="0.95"/>
+  <ellipse cx="13" cy="30" rx="8"  ry="10" fill="#C9A84C" opacity="0.75"/>
+  <ellipse cx="39" cy="30" rx="8"  ry="10" fill="#C9A84C" opacity="0.75"/>
+  <ellipse cx="18" cy="17" rx="9"  ry="9"  fill="#C9A84C" opacity="0.6"/>
+  <ellipse cx="34" cy="17" rx="9"  ry="9"  fill="#C9A84C" opacity="0.6"/>
+  <ellipse cx="26" cy="13" rx="10" ry="8"  fill="#E8C96A" opacity="0.55"/>
+  <!-- hair sheen -->
+  <ellipse cx="22" cy="22" rx="4"  ry="5"  fill="rgba(255,245,200,0.18)"/>
+
+  <!-- Face -->
+  <circle cx="26" cy="32" r="8" fill="#8B5E3C"/>
+
+  <!-- Neck -->
+  <rect x="23" y="38" width="6" height="5" rx="1.5" fill="#7A5230"/>
+
+  <!-- Shoulders -->
+  <path d="M10 55 Q12 43 26 44 Q40 43 42 55 Z" fill="#4A1875"/>
+  <!-- dress neckline -->
+  <path d="M19 44 Q26 49 33 44" fill="none" stroke="url(#gGold)" stroke-width="0.8"/>
+
+  <!-- ── Crown ── -->
+  <g transform="translate(26,13)">
+    <rect x="-8" y="-3" width="16" height="5" rx="1.2" fill="url(#gGold)"/>
+    <polygon points="-8,-3 -5.5,-10 -2.5,-3" fill="url(#gGold)"/>
+    <polygon points="-1.5,-3 0,-12 1.5,-3"   fill="url(#gGold)"/>
+    <polygon points="2.5,-3 5.5,-10 8,-3"    fill="url(#gGold)"/>
+    <circle cx="-5.5" cy="-9" r="1.2" fill="#fff" opacity="0.9"/>
+    <circle cx="0"    cy="-11" r="1.4" fill="#fff" opacity="0.9"/>
+    <circle cx="5.5"  cy="-9" r="1.2" fill="#fff" opacity="0.9"/>
+  </g>
+
+  <!-- Sparkle accents -->
+  <circle cx="8"  cy="18" r="0.9" fill="#E8C96A" opacity="0.7"/>
+  <circle cx="44" cy="18" r="0.9" fill="#E8C96A" opacity="0.7"/>
+  <circle cx="26" cy="6"  r="0.7" fill="#E8C96A" opacity="0.5"/>
+
+  <!-- Thin gold divider -->
+  <line x1="56" y1="8" x2="56" y2="58" stroke="#C9A84C" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- ── Wordmark ── -->
+  <!-- "Gracious" italic serif -->
+  <text x="64" y="30"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="20"
+    font-weight="700"
+    font-style="italic"
+    fill="url(#gGold)"
+    letter-spacing="0.5">Gracious</text>
+
+  <!-- "HAIR EXTENSION" spaced caps -->
+  <text x="65" y="42"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="8"
+    font-weight="400"
+    fill="#FFFDF7"
+    letter-spacing="3">HAIR EXTENSION</text>
+
+  <!-- Thin rule -->
+  <rect x="64" y="45" width="152" height="0.6" rx="0.3" fill="#C9A84C" opacity="0.45"/>
+
+  <!-- Tagline micro text -->
+  <text x="65" y="55"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="6"
+    font-style="italic"
+    fill="#C9A84C"
+    opacity="0.8"
+    letter-spacing="0.5">Your Crown Deserves the Best</text>
+</svg>
