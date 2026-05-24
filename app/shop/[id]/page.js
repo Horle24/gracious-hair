@@ -1,10 +1,10 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { products as fallbackProducts } from '../../../data/products';
-import { useCart } from '../../../context/CartContext';
-import ProductGallery from '../../../components/ProductGallery';
-import ProductReviews from '../../../components/ProductReviews';
+import { products as fallbackProducts } from '../../data/products';
+import { useCart } from '../../context/CartContext';
+import ProductGallery from '../../components/ProductGallery';
+import ProductReviews from '../../components/ProductReviews';
 
 const SHEET_API_URL = process.env.NEXT_PUBLIC_SHEET_API_URL || '';
 
