@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { products as fallbackProducts } from '../../data/products';
-import { useCart } from '../../context/CartContext';
+import { useCart } from '../../components/CartContext';
 import ProductGallery from '../../components/ProductGallery';
 import ProductReviews from '../../components/ProductReviews';
 
